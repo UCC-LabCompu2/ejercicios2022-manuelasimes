@@ -16,8 +16,10 @@ function CambioUnidades (unidad, valor) {
         document.lasUnidades.unid_pulgada.value = valor * 39.3701;
         document.lasUnidades.unid_pie.value = valor * 3.28984;
         document.lasUnidades.yarda.value = valor * 1.89361;
-    } else if (unidad == "pulgada") {
-        document.lasUnidades.unid_metro = valor * valor * 0.0254;
+    } else if (unidad === "pulgada") {
+        document.lasUnidades.unid_metro =   valor * 0.0254;
+        document.lasUnidades.unid_yarda = valor * 0.0277778;
+        document.lasUnidades.unid_pie = valor * 0.0833333;
     }
 }
 function convertirGR(id){
